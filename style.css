@@ -1,0 +1,543 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.back-img-to-android{
+  background-image: url("images/back-img.png");
+  background-repeat: round;
+}
+
+.part-android{
+  height: 100vh;
+}
+
+.vertical-line{
+  border-right: 2px solid grey;
+}
+
+.part-iphone{
+  height: 100vh;
+}
+
+.android-border-phone{
+  margin: 0 auto;
+  height: 550px;
+  width: 70%;
+  border: 2px solid #959595;
+  border-radius: 38px;
+  box-shadow: 0px -1px 0px 2px #cccccc;
+  background-color: #d7e9eb;
+}
+
+.android-display{
+  height: 435px;
+  width: 92%;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+.circle{
+  float: right;
+  height: 10px;
+  width: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.line-call{
+  height: 5px;
+  width: 46px;
+  background-color: black;
+  border-radius: 23%;
+  float: left;
+  margin-top: 2px;
+  margin-right: 19px;
+}
+
+.mini-circle{
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.flash-circle{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ffcb6e;
+  display: inline-block;
+  margin-left: 11px;
+  margin-bottom: 3px;
+}
+
+.logo-sumsung{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-main-android{
+  width: 56px;
+  height: 17px;
+  border-radius: 22%;
+  background-color: #dbdbdb;
+  border: 1px solid;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 11px;
+}
+
+/*айфон*/
+
+.back-img-to-iphone{
+  background-image: url("images/back-img.png");
+  background-repeat: round;
+}
+
+.iphone-border-phone{
+  margin: 0 auto;
+  height: 540px;
+  width: 62%;
+  border: 2px solid #c4c4c4;
+  border-radius: 30px;
+  box-shadow: 0px -1px 0px 3px #959595;
+  background-color: #f6f6f6;
+}
+
+.top-circle-to-iphone{
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+.circle-iphone-next-to-the-line{
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: black;
+  display: inline-block;
+  margin-left: 16px;
+}
+
+.line-to-call-iphone{
+  height: 6px;
+  width: 42px;
+  border-radius: 19%;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: inline-block;
+  margin-left: 13px;
+}
+
+.iphone-display{
+  height: 424px;
+  width: 93%;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 4px;
+  box-shadow: 0px 0px 2px 0px;
+}
+
+.btn-iphone{
+  margin: 0 auto;
+  height: 37px;
+  width: 37px;
+  border: 3px solid #535353;
+  border-radius: 50%;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+@media(min-width: 320px) {
+  .android-border-phone{
+    width: 128%;
+  }
+  .mr-0{
+    margin-right: 28px !important;
+  }
+  .iphone-border-phone{
+    width: 113%;
+  }
+}
+
+@media(min-width: 350px) {
+  .android-border-phone{
+    width: 116%;
+  }
+  .iphone-border-phone{
+    width: 106%;
+  }
+}
+
+@media(min-width: 355px) {
+  .android-border-phone{
+    width: 114%;
+  }
+  .iphone-border-phone{
+    width: 103%;
+  }
+}
+
+@media(min-width: 358px) {
+  .android-border-phone{
+    width: 113%;
+  }
+  .iphone-border-phone{
+    width: 101%;
+  }
+}
+
+@media(min-width: 375px) {
+  .android-border-phone{
+    width: 107%;
+  }
+  .iphone-border-phone{
+    width: 100%;
+  }
+  .mr-0{
+    margin-right: 0 !important;
+  }
+}
+
+@media(min-width: 404px) {
+  .android-border-phone{
+    width: 99%;
+  }
+  .iphone-border-phone{
+    width: 90%;
+  }
+}
+
+@media(min-width: 425px) {
+  .android-border-phone{
+    width: 93%;
+  }
+  .iphone-border-phone{
+    width: 86%;
+  }
+}
+
+@media(min-width: 465px) {
+  .android-border-phone{
+    width: 85%;
+  }
+  .iphone-border-phone{
+    width: 78%;
+  }
+}
+
+@media(min-width: 514px) {
+  .android-border-phone{
+    width: 76%;
+  }
+  .iphone-border-phone{
+    width: 70%;
+  }
+}
+
+@media(min-width: 551px) {
+  .android-border-phone{
+    width: 71%;
+  }
+  .iphone-border-phone{
+    width: 66%;
+  }
+}
+
+@media(min-width: 600px) {
+  .android-border-phone{
+    width: 65%;
+  }
+  .iphone-border-phone{
+    width: 58%;
+  }
+}
+
+@media(min-width: 658px) {
+  .android-border-phone{
+    width: 59%;
+  }
+  .iphone-border-phone{
+    width: 54%;
+  }
+}
+
+@media(min-width: 700px) {
+  .android-border-phone{
+    width: 55%;
+  }
+  .iphone-border-phone{
+    width: 50%;
+  }
+}
+
+@media(min-width: 768px) {
+  .android-border-phone{
+    width: 85%;
+  }
+  .iphone-border-phone{
+    width: 80%;
+  }
+}
+
+@media(min-width: 791px) {
+  .android-border-phone{
+    width: 83%;
+  }
+  .iphone-border-phone{
+    width: 77%;
+  }
+}
+
+@media(min-width: 810px) {
+  .android-border-phone{
+    width: 81%;
+  }
+  .iphone-border-phone{
+    width: 75%;
+  }
+}
+
+@media(min-width: 830px) {
+  .android-border-phone{
+    width: 79%;
+  }
+  .iphone-border-phone{
+    width: 72%;
+  }
+}
+
+@media(min-width: 870px) {
+  .android-border-phone{
+    width: 75%;
+  }
+  .iphone-border-phone{
+    width: 70%;
+  }
+}
+
+@media(min-width: 912px) {
+  .android-border-phone{
+    width: 71%;
+  }
+  .iphone-border-phone{
+    width: 65%;
+  }
+}
+
+@media(min-width: 969px) {
+  .android-border-phone{
+    width: 67%;
+  }
+  .iphone-border-phone{
+    width: 61%;
+  }
+}
+
+@media(min-width: 992px) {
+  .android-border-phone{
+    width: 139%;
+  }
+  .iphone-border-phone{
+    width: 128%;
+  }
+}
+
+@media(min-width: 1024px) {
+  .android-border-phone{
+    width: 134%;
+  }
+  .iphone-border-phone{
+    width: 123%;
+  }
+}
+
+@media(min-width: 1083px) {
+  .android-border-phone{
+    width: 126%;
+  }
+  .iphone-border-phone{
+    width: 115%;
+  }
+}
+
+@media(min-width: 1107px) {
+  .android-border-phone{
+    width: 123%;
+  }
+  .iphone-border-phone{
+    width: 113%;
+  }
+}
+
+@media(min-width: 1154px) {
+  .android-border-phone{
+    width: 117%;
+  }
+  .iphone-border-phone{
+    width: 105%;
+  }
+}
+
+@media(min-width: 1217px) {
+  .android-border-phone{
+    width: 110%;
+  }
+  .iphone-border-phone{
+    width: 101%;
+  }
+}
+
+@media(min-width: 1298px) {
+  .android-border-phone{
+    width: 103%;
+  }
+  .iphone-border-phone{
+    width: 95%;
+  }
+}
+
+@media(min-width: 1359px) {
+  .android-border-phone{
+    width: 98%;
+  }
+  .iphone-border-phone{
+    width: 90%;
+  }
+}
+
+@media(min-width: 1440px) {
+  .android-border-phone{
+    width: 92%;
+  }
+  .iphone-border-phone{
+    width: 83%;
+  }
+}
+
+@media(min-width: 1505px) {
+  .android-border-phone{
+    width: 89%;
+  }
+  .iphone-border-phone{
+    width: 80%;
+  }
+}
+
+@media(min-width: 1552px) {
+  .android-border-phone{
+    width: 84%;
+  }
+  .iphone-border-phone{
+    width: 76%;
+  }
+}
+
+@media(min-width: 1593px) {
+  .android-border-phone{
+    width: 82%;
+  }
+  .iphone-border-phone{
+    width: 75%;
+  }
+}
+
+@media(min-width: 1669px) {
+  .android-border-phone{
+    width: 78%;
+  }
+  .iphone-border-phone{
+    width: 70%;
+  }
+}
+
+@media(min-width: 1672px) {
+  .android-border-phone{
+    width: 78%;
+  }
+  .iphone-border-phone{
+    width: 72%;
+  }
+}
+
+@media(min-width: 1705px) {
+  .android-border-phone{
+    width: 76%;
+  }
+  .iphone-border-phone{
+    width: 69%;
+  }
+}
+
+@media(min-width: 1737px) {
+  .android-border-phone{
+    width: 75%;
+  }
+  .iphone-border-phone{
+    width: 68%;
+  }
+}
+
+@media(min-width: 1784px) {
+  .android-border-phone{
+    width: 73%;
+  }
+  .iphone-border-phone{
+    width: 66%;
+  }
+}
+
+@media(min-width: 1883px) {
+  .android-border-phone{
+    width: 69%;
+  }
+  .iphone-border-phone{
+    width: 62%;
+  }
+}
+
+@media(min-width: 2000px) {
+  .android-border-phone{
+    width: 67%;
+  }
+  .iphone-border-phone{
+    width: 60%;
+  }
+}
+
+@media(min-width: 2200px) {
+  .android-border-phone{
+    width: 58%;
+  }
+  .iphone-border-phone{
+    width: 50%;
+  }
+}
+
+@media(min-width: 2380px) {
+  .android-border-phone{
+    width: 54%;
+  }
+  .iphone-border-phone{
+    width: 48%;
+  }
+}
+
+@media(min-width: 2580px) {
+  .android-border-phone{
+    width: 49%;
+  }
+  .iphone-border-phone{
+    width: 45%;
+  }
+}
