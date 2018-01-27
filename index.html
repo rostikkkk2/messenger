@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="helpers.css">
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="script.js"></script>
   </head>
   <body>
@@ -39,14 +41,160 @@
                   <div class="col-md-4 col-sm-4 col-xs-4"></div>
                 </div>
                 <div class="android-display mt-11">
-                  <!-- <div class="">это для верхушки тип время показатель зарядки</div> -->
-                  <!-- <div class="">это для переписок</div> -->
-                  <!-- <div class="">
-                    если что опустишь див вниз
-                    2 дива сверху не трож))
-                    каждой кнопке добавь один пустой класс и атрибут value= то что в кнопке
-                    ЕСЛИ ЧТО Я УДАЛИЛ ПАПКУ NODE MODULES ПОЭТОМУ В КОНСОЛЕ НА ПИШИ NPM INSTALLL!!!!!!!
-                  </div> -->
+                  <div class="part-top-disp-samsung">
+                    <i class="fa fa-wifi ml-121" aria-hidden="true"></i>
+                    <i class="fa fa-signal" aria-hidden="true"></i>
+                    <span class="batary-samsung">99%</span>
+                    <i class="fa fa-battery-full" aria-hidden="true"></i>
+                    <span class="time-samsung">23:32</span><span>PM</span>
+                  </div>
+                  <div class="part-to-show-messeges"></div>
+                  <div class="input-group enter">
+                    <input type="text" class="form-control" placeholder="Enter text...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                    </span>
+                  </div>
+                  <div class="keyboard ru hide">
+                    <div class="top-keyboard">
+                      <button class="btn-xs leter" value="й">й</button>
+                      <button class="btn-xs leter" value="ц">ц</button>
+                      <button class="btn-xs leter" value="у">у</button>
+                      <button class="btn-xs leter" value="к">к</button>
+                      <button class="btn-xs leter" value="е">е</button>
+                      <button class="btn-xs leter" value="н">н</button>
+                      <button class="btn-xs leter" value="г">г</button>
+                      <button class="btn-xs leter" value="ш">ш</button>
+                      <button class="btn-xs leter" value="щ">щ</button>
+                      <button class="btn-xs leter" value="з">з</button>
+                      <button class="btn-xs leter" value="ч">х</button>
+                     </div>
+                    <div class="center-keyboard">
+                      <button class="btn-xs leter" value="ф">ф</button>
+                      <button class="btn-xs leter" value="ы">ы</button>
+                      <button class="btn-xs leter" value="в">в</button>
+                      <button class="btn-xs leter" value="а">а</button>
+                      <button class="btn-xs leter" value="п">п</button>
+                      <button class="btn-xs leter" value="р">р</button>
+                      <button class="btn-xs leter" value="о">о</button>
+                      <button class="btn-xs leter" value="л">л</button>
+                      <button class="btn-xs leter" value="д">д</button>
+                      <button class="btn-xs leter" value="ж">ж</button>
+                      <button class="btn-xs leter" value="э">э</button>
+                    </div>
+                    <div class="center-keyboard">
+                      <button class="btn-xs leter glyphicon glyphicon-arrow-up"></button>
+                      <button class="btn-xs leter" value="я">я</button>
+                      <button class="btn-xs leter" value="ч">ч</button>
+                      <button class="btn-xs leter" value="с">с</button>
+                      <button class="btn-xs leter" value="м">м</button>
+                      <button class="btn-xs leter" value="и">и</button>
+                      <button class="btn-xs leter" value="т">т</button>
+                      <button class="btn-xs leter" value="ь">ь</button>
+                      <button class="btn-xs leter" value="б">б</button>
+                      <button class="btn-xs leter" value="ю">ю</button>
+                      <button class="btn-xs leter glyphicon glyphicon-remove"></button>
+                    </div>
+                    <div class="bottom-keyboard">
+                      <button class="btn-xs leter-bottom numb">?123</button>
+                      <button class="btn-xs leter-bottom" value=",">,</button>
+                      <button class="btn-xs language_en leter-bottom glyphicon glyphicon-globe "></button>
+                      <button class="btn-xs space" value=" ">Пробел</button>
+                      <button class="btn-xs leter" value=".">.</button>
+                      <button class="btn-xs leter glyphicon glyphicon-arrow-left"></button>
+                    </div>
+                  </div>
+                  <div class="keyboard en">
+                    <div class="top-keyboard">
+                      <button class="btn-xs leter_en" value="q">q</button>
+                      <button class="btn-xs leter_en" value="w">w</button>
+                      <button class="btn-xs leter_en" value="e">e</button>
+                      <button class="btn-xs leter_en" value="r">r</button>
+                      <button class="btn-xs leter_en" value="t">t</button>
+                      <button class="btn-xs leter_en" value="y">y</button>
+                      <button class="btn-xs leter_en" value="u">u</button>
+                      <button class="btn-xs leter_en" value="i">i</button>
+                      <button class="btn-xs leter_en" value="o">o</button>
+                      <button class="btn-xs leter_en" value="p">p</button>
+                     </div>
+                    <div class="center-keyboard">
+                      <button class="btn-xs leter_en" value="a">a</button>
+                      <button class="btn-xs leter_en" value="s">s</button>
+                      <button class="btn-xs leter_en" value="d">d</button>
+                      <button class="btn-xs leter_en" value="f">f</button>
+                      <button class="btn-xs leter_en" value="g">g</button>
+                      <button class="btn-xs leter_en" value="h">h</button>
+                      <button class="btn-xs leter_en" value="j">j</button>
+                      <button class="btn-xs leter_en" value="k">k</button>
+                      <button class="btn-xs leter_en" value="l">l</button>
+                    </div>
+                    <div class="center-keyboard">
+                      <button class="btn-xs leter_en_sift_del glyphicon glyphicon-arrow-up"></button>
+                      <button class="btn-xs leter_en" value="z">z</button>
+                      <button class="btn-xs leter_en" value="x">x</button>
+                      <button class="btn-xs leter_en" value="c">c</button>
+                      <button class="btn-xs leter_en" value="v">v</button>
+                      <button class="btn-xs leter_en" value="b">b</button>
+                      <button class="btn-xs leter_en" value="n">n</button>
+                      <button class="btn-xs leter_en" value="m">m</button>
+                      <button class="btn-xs leter_en_sift_del  glyphicon glyphicon-remove"></button>
+                    </div>
+                    <div class="bottom-keyboard">
+                      <button class="btn-xs leter-bottom numb">?123</button>
+                      <button class="btn-xs leter-bottom" value=",">,</button>
+                      <button class="btn-xs leter-bottom glyphicon glyphicon-globe language_ru"></button>
+                      <button class="btn-xs space" value=" ">Space</button>
+                      <button class="btn-xs leter" value=".">.</button>
+                      <button class="btn-xs leter glyphicon glyphicon-arrow-left"></button>
+                    </div>
+                  </div>
+                  <div class="keyboard numb_keyboard hide ">
+                    <div class="top-keyboard">
+                      <button class="btn-xs leter_number" value="1">1</button>
+                      <button class="btn-xs leter_number" value="2">2</button>
+                      <button class="btn-xs leter_number" value="3">3</button>
+                      <button class="btn-xs leter_number" value="4">4</button>
+                      <button class="btn-xs leter_number" value="5">5</button>
+                      <button class="btn-xs leter_number" value="6">6</button>
+                      <button class="btn-xs leter_number" value="7">7</button>
+                      <button class="btn-xs leter_number" value="8">8</button>
+                      <button class="btn-xs leter_number" value="9">9</button>
+                      <button class="btn-xs leter_number" value="0">0</button>
+                     </div>
+                    <div class="center-keyboard">
+                      <button class="btn-xs leter_number" value="@">@</button>
+                      <button class="btn-xs leter_number" value="#">#</button>
+                      <button class="btn-xs leter_number" value="$">$</button>
+                      <button class="btn-xs leter_number" value="_">_</button>
+                      <button class="btn-xs leter_number" value="&">&#38;</button>
+                      <button class="btn-xs leter_number" value="-">-</button>
+                      <button class="btn-xs leter_number" value="+">+</button>
+                      <button class="btn-xs leter_number" value="(">(</button>
+                      <button class="btn-xs leter_number" value=")">)</button>
+                      <button class="btn-xs leter_number" value="">/</button>
+                    </div>
+                    <div class="center-keyboard">
+                      <button class="btn-xs leter_number_1" value="=\<">=\<</button>
+                      <button class="btn-xs leter_number" value="*">*</button>
+                      <button class="btn-xs leter_number" value="'">'</button>
+                      <button class="btn-xs leter_number" value="'">'</button>
+                      <button class="btn-xs leter_number" value=":">:</button>
+                      <button class="btn-xs leter_number" value=";">;</button>
+                      <button class="btn-xs leter_number" value="!">!</button>
+                      <button class="btn-xs leter_number" value="?">?</button>
+                      <button class="btn-xs leter2 glyphicon glyphicon-remove"></button>
+                    </div>
+                    <div class="bottom-keyboard">
+                      <button class="btn-xs leter-bottom let">AБВ</button>
+                      <button class="btn-xs leter-bottom" value=",">,</button>
+                      <button class="btn-xs leter-bottom">
+                        1*2
+                      </button>
+                      <button class="btn-xs space" value=" ">Пробел</button>
+                      <button class="btn-xs leter" value=".">.</button>
+                      <button class="btn-xs leter glyphicon glyphicon-arrow-left"></button>
+                    </div>
+                  </div>
                 </div>
                 <div class="row btns-under-disp">
                   <div class="col-md-1 col-sm-1 col-xs-1"></div>
@@ -85,13 +233,87 @@
                   <div class="col-md-3 col-sm-3 col-xs-3"></div>
                 </div>
                 <div class="iphone-display mt-12">
-                  <!-- <div class="">это для верхушки тип время показатель зарядки</div> -->
-                  <!-- <div class="">это для переписок</div> -->
-                  <!-- <div class="">
-                    если что опустишь див вниз
-                    2 дива сверху не трож))
-                    каждой кнопке добавь один пустой класс и атрибут value= то что в кнопке
-                  </div> -->
+                  <div class="top-of-display-iphone">
+                    <i class="fa fa-signal ml-6" aria-hidden="true"></i>
+                    <span class="kyivstar fs-12">Kyivstar</span>
+                    <i class="fa fa-wifi" aria-hidden="true"></i>
+                    <span class="time-iphone">23:32</span>
+                    <span class="batary">100%</span>
+                    <i class="fa fa-battery-full" aria-hidden="true"></i>
+                  </div>
+                  <div class="part-to-send-messege"></div>
+                  <div class="keyboard-iphone-and-input">
+                    <div class="input-messege-background">
+                      <i class="fa fa-paperclip btn-paperclip" aria-hidden="true"></i>
+                      <input type="text" class="input-iphone " id="input_iphone_messege">
+                      <!-- Даша, добавишь этой иконке -->
+                      <i class="fa fa-paper-plane btn-sent-messege" aria-hidden="true"></i>
+                    </div>
+                    <div class="part-keyboard-iphone">
+                      <div class="top-part-btns">
+                        <div class="text-center">
+                          <button class="btn btn-js ml-0 btns-in-keyboard" value="й">й</button>
+                          <button class="btn btn-js btns-in-keyboard" value="ц">ц</button>
+                          <button class="btn btn-js btns-in-keyboard" value="у">у</button>
+                          <button class="btn btn-js btns-in-keyboard" value="к">к</button>
+                          <button class="btn btn-js fs-16 btns-in-keyboard" value="е">е</button>
+                          <button class="btn btn-js btns-in-keyboard" value="н">н</button>
+                          <button class="btn btn-js padding-0-4-0-4 btns-in-keyboard" value="г">г</button>
+                          <button class="btn btn-js padding-0-2-0-2 fs-16 btns-in-keyboard" value="ш">ш</button>
+                          <button class="btn btn-js padding-0-2-0-2 fs-16 btns-in-keyboard" value="щ">щ</button>
+                          <button class="btn btn-js btns-in-keyboard" value="з">з</button>
+                          <button class="btn btn-js btns-in-keyboard" value="х">х</button>
+                        </div>
+                      </div>
+                      <div class="secound-part-keyboard-btns mt-3">
+                        <div class="text-center">
+                          <button class="btn btn-js padding-0-1-0-1 ml-0 btns-in-keyboard" value="ф">ф</button>
+                          <button class="btn btn-js padding-0-1-0-1 btns-in-keyboard" value="ы">ы</button>
+                          <button class="btn btn-js btns-in-keyboard" value="в">в</button>
+                          <button class="btn btn-js padding-0-3-0-2 btns-in-keyboard" value="а">а</button>
+                          <button class="btn btn-js fs-16 btns-in-keyboard" value="п">п</button>
+                          <button class="btn btn-js btns-in-keyboard" value="р">р</button>
+                          <button class="btn btn-js padding-0-3-0-3 btns-in-keyboard" value="о">о</button>
+                          <button class="btn btn-js fs-16 btns-in-keyboard" value="л">л</button>
+                          <button class="btn btn-js fs-16 btns-in-keyboard" value="д">д</button>
+                          <button class="btn btn-js padding-0-2-0-2 btns-in-keyboard" value="ж">ж</button>
+                          <button class="btn btn-js btns-in-keyboard" value="э">э</button>
+                        </div>
+                      </div>
+                      <div class="thirt-part-keyboard-btns mt-3">
+                        <div class="text-center">
+                          <button class="btn ml-0 btns-in-keyboard">
+                            <i class="fa fa-arrow-up keyboard-icon-arrow-up" aria-hidden="true"></i>
+                          </button>
+                          <button class="btn btn-js btns-in-keyboard" value="я">я</button>
+                          <button class="btn btn-js btns-in-keyboard" value="ч">ч</button>
+                          <button class="btn btn-js btns-in-keyboard" value="с">с</button>
+                          <button class="btn btn-js fs-16 btns-in-keyboard" value="м">м</button>
+                          <button class="btn btn-js btns-in-keyboard" value="и">и</button>
+                          <button class="btn btn-js btns-in-keyboard" value="т">т</button>
+                          <button class="btn btn-js fs-16 btns-in-keyboard" value="ь">ь</button>
+                          <button class="btn btn-js fs-16 btns-in-keyboard" value="б">б</button>
+                          <button class="btn btn-js padding-0-1-0-1 btns-in-keyboard" value="ю">ю</button>
+                          <button class="btn btn-js padding-0-1-0-2 bg-c fs-14 btns-in-keyboard">
+                            <i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="fouth-part-keyboard-btns mt-3">
+                        <div class="text-center">
+                          <button class="btn keyboard-numbers-btn btns-in-keyboard">123</button>
+                          <button class="btn btn-change-languege btns-in-keyboard">
+                            <i class="fa fa-globe" aria-hidden="true"></i>
+                          </button>
+                          <button class="btn btns-in-keyboard btn-microphone">
+                            <i class="fa fa-microphone" aria-hidden="true"></i>
+                          </button>
+                          <button class="btn btn-js btns-in-keyboard big-btn-keyboard" value=" ">Пробел</button>
+                          <button class="btn btns-in-keyboard btn-enter-keyboard">Ввод</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="row">
                   <div class="col-md-12 col-sm-12 col-xs-12">
