@@ -1,10 +1,7 @@
 $(document).ready(function(){
   // при нажатии мышки чтоб значение кнопки было в инпуте
-
-  //ЭТОТ КОД НЕ рАБОтает
   $(".btn-js").click(function(){
-    var btn = $(".btn-js").val();
-    console.log(btn);
+     document.getElementById("input_iphone_messege").value += this.value;
   });
 //
 
