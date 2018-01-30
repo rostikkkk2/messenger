@@ -185,71 +185,69 @@ button{
   width: 100%;
 }
 
-/* андрея клава */
 .keyboard {
   vertical-align: bottom;
   border-top: 1px solid #ccc;
 }
-.enter {
-  /* padding-top: 280px; */
-}
+
 .leter_ru {
   font-size: 12px;
   width: 21px;
 }
+
 .leter_en {
   font-size: 12px;
   width: 24px;
 }
+
 .leter_en_sift_del {
   font-size: 12px;
   width: 36px;
 }
+
 .leter_number {
   font-size: 12px;
   width: 23px;
 }
+
 .leter_number_1 {
   font-size: 11px;
   width: 49px;
 }
+
 .space {
   width: 123px;
 }
+
 .top-keyboard {
 text-align: center;
 }
+
 .center-keyboard{
   text-align: center;
 }
+
 .bottom-keyboard {
   text-align: center;
 }
+
 .hide {
   display: none;
 }
-/*  */
 
-/* верхушка дисплея айфона */
 .top-of-display-iphone{
   height: 20px;
   width: 100%;
   background-color: rgb(202, 203, 209);
-  border-radius: 5px 5px 0 0;
+  border-radius: 3px 3px 0 0;
   background-color: rgb(111, 116, 255);
   color: white;
 }
-/*  */
 
-/*место для показывания сообщений */
 .part-to-send-messege{
   width: 100%;
   height: 237px;
 }
-/*  */
-
-
-/* айфон инпут и клавиатура*/
 
 .btn-sent-messege{
   cursor: pointer;
@@ -321,6 +319,45 @@ text-align: center;
   padding: 0px 3px 0px 3px;
 }
 
+.btns-in-keyboard-en{
+  display: inline-block;
+  background-color: white;
+  font-size: 17px;
+  border-radius: 17%;
+  height: 27px;
+  margin-top: 4px;
+  margin-left: 2px;
+  padding: 0px 3px 0px 3px;
+}
+
+.btns-in-keyboard-simbols{
+  display: inline-block;
+  background-color: white;
+  font-size: 17px;
+  border-radius: 17%;
+  height: 27px;
+  margin-top: 4px;
+  margin-left: 2px;
+  padding: 0px 4px 0px 4px;
+}
+
+.btns-in-keyboard-simbols-top-of-space{
+  background-color: white;
+  border-radius: 17%;
+  height: 25px;
+  margin-top: 4px;
+  margin-left: 1px;
+  padding: 0 10px 0px 10px;
+}
+
+.btn-plus-simbols{
+  background-color: #bababa;
+  padding: 0 0 0 0;
+  border-radius: 17%;
+  height: 25px;
+  margin-top: 4px;
+}
+
 .keyboard-icon-arrow-up{
   font-size: 10px;
 }
@@ -366,4 +403,15 @@ text-align: center;
   font-size: 12px;
   margin-left: 49px;
 }
-/*  */
+
+.color-btn-big-violet{
+  background-color: #6060ff;
+}
+
+.color-btn-big-white{
+  background-color: white;
+}
+
+.color-btn-big-grey{
+  background-color: #d5d5d5;
+}
