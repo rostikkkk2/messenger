@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.css">
+    <!-- <link rel="stylesheet" href="node_modules/aos/dist/aos.css"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="helpers.css">
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- <script src="node_modules/aos/dist/aos.js"></script> -->
     <script src="script.js"></script>
   </head>
   <body>
@@ -22,7 +24,7 @@
           <div class="row pt-100">
             <div class="col-md-3 col-sm-3 col-xs-1"></div>
             <div class="col-md-6 col-sm-6 col-xs-10 mr-0">
-              <div class="android-border-phone">
+              <div class="android-border-phone" data-aos="fade-down-right" data-aos-delay="1500" data-aos-duration="2500">
                 <div class="row top-part-in-android-phone mt-12">
                   <div class="col-md-3 col-sm-3 col-xs-3"></div>
                   <div class="col-md-2 col-sm-2 col-xs-2 ml--6">
@@ -49,11 +51,14 @@
                     <i class="fa fa-battery-full" aria-hidden="true"></i>
                     <span class="time-samsung">23:32</span><span>PM</span>
                   </div>
-                  <div class="part-to-show-messeges"></div>
+                  <div class="part-to-show-messeges overflow" id='show-sending-messages'></div>
                   <div class="input-group enter">
-                    <input type="text" class="form-control" id="input_samsung_messege" placeholder="Enter text...">
+                    <span class="input-group-btn ">
+                      <button class="btn btn-default btn-do-samsung-keyboard-hide" type="button"><span class="glyphicon glyphicon-arrow-down"></span></button>
+                    </span>
+                    <input type="text" class="form-control input_samsung_messege" id="part-to-show-messeges" placeholder="Enter text...">
                     <span class="input-group-btn">
-                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-arrow-up"></span></button>
+                      <button class="btn btn-default" type="button" id='sending_btn'><span class="glyphicon glyphicon-arrow-up"></span></button>
                     </span>
                   </div>
                   <div class="keyboard ru hide">
@@ -105,7 +110,7 @@
                       <button class="btn-xs btn-js-samsung leter glyphicon glyphicon-arrow-left"></button>
                     </div>
                   </div>
-                  <div class="keyboard en">
+                  <div class="keyboard en hide">
                     <div class="top-keyboard">
                       <button class="btn-xs btn-js-samsung leter_en" value="q">q</button>
                       <button class="btn-xs btn-js-samsung leter_en" value="w">w</button>
@@ -149,7 +154,7 @@
                       <button class="btn-xs btn-js-samsung leter glyphicon glyphicon-arrow-left"></button>
                     </div>
                   </div>
-                  <div class="keyboard numb_keyboard hide ">
+                  <div class="keyboard numb_keyboard samsung-keyboard-simbols hide">
                     <div class="top-keyboard">
                       <button class="btn-xs btn-js-samsung leter_number" value="1">1</button>
                       <button class="btn-xs btn-js-samsung leter_number" value="2">2</button>
@@ -175,7 +180,7 @@
                       <button class="btn-xs btn-js-samsung leter_number" value="">/</button>
                     </div>
                     <div class="center-keyboard">
-                      <button class="btn-xs btn-js-samsung leter_number_1" value="=\<">=\<</button>
+                      <button class="btn-xs btn-js-samsung leter_number_1">=\<</button>
                       <button class="btn-xs btn-js-samsung leter_number" value="*">*</button>
                       <button class="btn-xs btn-js-samsung leter_number" value="'">'</button>
                       <button class="btn-xs btn-js-samsung leter_number" value="'">'</button>
@@ -219,7 +224,7 @@
           <div class="row pt-100">
             <div class="col-md-3 col-sm-3 col-xs-1"></div>
             <div class="col-md-6 col-sm-6 col-xs-10">
-              <div class="iphone-border-phone">
+              <div class="iphone-border-phone" data-aos="fade-down-left" data-aos-delay="1500" data-aos-duration="2500">
                 <div class="row top-camera-to-iphone">
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="top-circle-to-iphone"></div>
@@ -242,14 +247,15 @@
                     <span class="batary">100%</span>
                     <i class="fa fa-battery-full" aria-hidden="true"></i>
                   </div>
-                  <div class="part-to-send-messege"></div>
+                  <div class="part-to-send-messege overflow" id='message'></div>
                   <div class="keyboard-iphone-and-input">
                     <div class="input-messege-background">
-                      <i class="fa fa-paperclip btn-paperclip" aria-hidden="true"></i>
+                      <i class="fa fa-paperclip btn-paperclip icon-paperclip" aria-hidden="true"></i>
+                      <i class="fa fa-arrow-down btn-paperclip fs-16 arrow-down hide" aria-hidden="true"></i>
                       <input type="text" class="input-iphone " id="input_iphone_messege" placeholder=" Сообщение...">
-                      <i class="fa fa-paper-plane btn-sent-messege" aria-hidden="true"></i>
+                      <i class="fa fa-paper-plane btn-sent-messege" id="send_btn" aria-hidden="true"></i>
                     </div>
-                    <div class="part-keyboard-iphone ru-js-iphone">
+                    <div class="part-keyboard-iphone ru-js-iphone hide">
                       <div class="top-part-btns">
                         <div class="text-center">
                           <button class="btn btn-js-iphone ml-0 btns-in-keyboard" value="й">й</button>
@@ -309,7 +315,7 @@
                             <i class="fa fa-microphone" aria-hidden="true"></i>
                           </button>
                           <button class="btn btn-js-iphone btns-in-keyboard big-btn-keyboard" value=" ">Пробел</button>
-                          <button class="btn btns-in-keyboard btn-enter-keyboard">Ввод</button>
+                          <button class="btn btns-in-keyboard btn-enter-keyboard" id='send_btn'>Ввод</button>
                         </div>
                       </div>
                     </div>
